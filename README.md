@@ -33,8 +33,3 @@ The system utilizes four distinct states:
 | **LEFT_SHIFT** | Circularly shifts the bits to the left. | `BTNL` |
 | **RIGHT_SHIFT** | Circularly shifts the bits to the right. | `BTNR` |
 
-## 🐛 Implementation Notes & Debugging
-During the development process, we encountered and resolved the following issues:
-
-* **Register Assignment:** Initially, the shift logic failed to update the output register because the shifted result was not properly assigned back to the `out` register. This was fixed to ensure persistent storage of the shifted pattern.
-* **State Transitions:** We utilized 1-Hot encoding for
